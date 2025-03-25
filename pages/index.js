@@ -6,19 +6,19 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div>
+    <div className={styles.title}>
       <h1>Homepage</h1>
-      <p>
+      <p className={styles.text}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia porro
         voluptas molestiae impedit placeat voluptatum quis possimus quasi sit
         asperiores!
       </p>
-      <p>
+      <p className={styles.text}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia porro
         voluptas molestiae impedit placeat voluptatum quis possimus quasi sit
         asperiores!
       </p>
-      <Link href="/people">See People Listing</Link>
+      <Link href="/people" className={styles.btn}>See People Listing</Link>
     </div>
   );
 }
